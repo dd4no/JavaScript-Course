@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <title>Functions</title>
+        <script src="JS/main.js"></script>  <!-- External JavaScript File Link -->
+	</head>
+	<body>
+
+        <!-- Sentence changes appearance and content from different functions -->
+        <p id="sentence">Choose a COLOR:</p>
+
+        <!-- Buttons to call functions -->
+        <button onclick="Red_Font()">RED</button>
+        <button onclick="Blue_Font()">BLUE</button>
+        <button onclick="Green_Font()">GREEN</button>
+        <button onclick="Black_Font()">BLACK</button>
+        <p><button onclick="Reset()">Reset</button></p>
+        <hr>
+
+        <!-- Clicking element calls a function that changes content to a concatenated string -->
+        <blockquote style="margin:20px 5px; width:25%; background-color:gray; border: 1px solid black; padding:10px;" id="joinMe" onclick="joinMe()">
+            Click for a quote
+        </blockquote>
+        
+	</body>
+</html>
