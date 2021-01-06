@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	        <meta charset="utf-8">
+                <title>Comparisons and Type Coercion</title>
+                <script src="JS/main.js"></script>
+	</head>
+        
+        <body>
+                <hr>
+                <!-- Use Not a Number and Infinity values-->
+                <p id="test" onclick="notNumber()">Click to divide zero by zero</p>
+                <p id="test1" onclick="showFalse()">Click to see if "Cat" is a not a number</p>
+                <p id="test2" onclick="showTrue()">Click to see if 53 is not a number</p>
+                <p id="test3" onclick="posInfinity()">Click to verify the number 4 x 10E500 has an infinite value</p>
+                <p id="test4" onclick="negInfinity()">Click to verify the number -4 x 10E500 has an infinite negative value</p>
+
+                <hr>
+                <!-- Use Boolean Logic -->
+                <button id="button" onclick="boolTrue()">53 is greater than 52?</button><br><br>
+                <button id="button1" onclick="boolFalse()">100 is less than 53?</button><br><br>
+                <button id="button2" onclick="boolTrue1()">53 equals 53?</button><br><br>
+                <button id="button3" onclick="boolFalse1()">16 equals 53?</button><br><br>
+                <button id="button4" onclick="boolTrue2()">"53" equals "53"?</button><br><br>
+                <button id="button5" onclick="boolFalse2()">53 equals "21"?</button><br><br>
+                <button id="button6" onclick="boolFalse3()">53 equals "53"?</button><br><br>
+                <button id="button7" onclick="boolFalse4()">53 equals 52?</button><br><br>
+                
+                <hr>
+                <!-- Use Type Coercion-->
+                <p id="coercion" onclick="coerce()">Click to coerce the string "5" and the number 3 to display together</p>
+
+                <hr>
+                <!-- Use Logical Operators-->
+                <p>If both statements are true, return "true": (12>6) AND (24>12)&nbsp;&nbsp; <button id="button8" onclick="logicAND()">Check</button></p>
+                <p>If both statements are true, return "true": (12<6) AND (24>12)&nbsp;&nbsp; <button id="button9" onclick="logicAND1()">Check</button></p>
+                <p>If either statement is true, return "true": (12>6) OR (24<12)&nbsp;&nbsp; <button id="button10" onclick="logicOR()">Check</button></p>
+                <p>If either statement is true, return "true": (12<6) OR (24<12)&nbsp;&nbsp; <button id="button11" onclick="logicOR1()">Check</button></p>
+                <p>If the statement is true, return "false": (36>6)&nbsp;&nbsp; <button id="button12" onclick="logicNOT()">Check</button></p>
+                <p>If the statement is false, return "true": (36<6)&nbsp;&nbsp;<button id="button13" onclick="logicNOT1()">Check</button></p>
+	</body>
+</html>
