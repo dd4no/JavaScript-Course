@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Scope and Time Function</title>
+		<script src="JS/main.js"></script>
+	</head>
+	<body>
+
+        <!-- Use Global Variables -->
+        <h4>You just bought a six-pack!</h4>
+        <button onclick="drinkBeer()">Drink</button>
+        <p id="leftover"></p>
+            
+        <button onclick="buyMore()">Buy Another Sixer</button>
+        <p id="more"></p>
+
+        <hr>
+
+        <!-- Use Local Variables -->
+        <p>Start with 6</p>
+        <button onclick="numAdd()">Add twelve</button>
+        <p id="result"></p>
+        <button onclick="numSubtract()">Subtract six</button>
+
+        <hr>
+
+        <!-- Use If Statements -->
+        <p id="message" onclick="timeOfDay()">Greet Me</p>
+
+        <hr>
+
+        <!-- Use If-Else Statement-->
+        <h3>To kayak, or not to kayak?</h3>
+        <label for="conditions">What's the weather like out there?&nbsp;&nbsp;</label>
+        <select id="conditions">
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+        </select>
+        <br><br>
+        <button onclick="decide()">GO or NO-GO?</button>
+
+        <p id="decision"></p>
+
+        <hr>
+
+        <!-- Use Else-If Statements -->
+        <p id="newMessage" onclick="timeOfDay1()">Greet Me Under Different Conditions</p>
+
+	</body>
+</html>
