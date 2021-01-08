@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>String and Number Methods</title>
+		<script src="JS/main.js"></script>
+	</head>
+	<body>
+
+        <!-- STRING METHODS-->
+        <h1>String Methods</h1>
+        <hr>
+        <!-- concat() method -->
+        <button onclick="comeTogether()">Put together a Lyric</button>
+        <p id="lyric"></p>
+        <hr>
+
+        <!-- slice() method -->
+        <q>Get back, get back, get back to where you once belonged</q><br><br>
+        <button onclick="getBack()">Slice out a Lyric</button>
+        <p id="lyric1"></p>
+        <hr>
+
+        <!-- toUpperCase() and search() methods-->
+        <button onclick="capsLock()">CapsLock</button>
+        <p id="lyric2">I am the walrus</p>
+        <button onclick="startPosition()">Starting position of the word "walrus"</button>
+        <p id="position"></p>
+        <hr>
+
+        <!-- valueOf() methods --> 
+        <h4>Say something:</h4>
+        <textarea id="statement" cols="30" rows="5"></textarea><br>
+        <button onclick="validate()">Confirm Input</button>
+        <p id="confirmation"></p>
+        <hr>
+        <hr>
+        
+        <!-- NUMBER METHODS -->
+        <h1>Number Methods</h1>
+        <hr>
+       
+        <!-- toString() method -->
+        <button onclick="numbString()">String a Number</button>
+        <p id="num"></p>
+        <hr>
+        
+        <!-- toPrecision() and toFixed methods -->
+        <h5>pi</h5>
+        <blockquote>
+            3.1415926535897932384626433832795028841971693993751058209749445923<br>
+            07816406286208998628034825342117067982148086513282306647093844609<br>
+            55058223172535940812848111745028410270193852110555964462294895493<br>
+            03819644288109756659334461284756482337867831652712019091456485669<br>
+            23460348610454326648213393607260249141273724587006606315588174881<br>
+            52092096282925409171536436789259036001133053054882046652138414695<br>
+            19415116094330572703657595919530921861173819326117931051185480744
+        </blockquote>
+        <button onclick="chopPi()">Make pi more manageable</button>
+        <p id="pi"></p>
+        <button onclick="fixNumb()">And maybe a bit more?</button>
+        <p id="short"></p>
+        <hr>
+
+        
+	</body>
+</html>
