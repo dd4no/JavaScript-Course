@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops and Arrays</title>
+        <script src="JS/main.js"></script>        
+    </head>
+    <body>
+
+        <!-- WHILE Loop -->
+        <button onclick="callLoop()">Click to Loop</button>
+        <p id="loop"></p>
+        <hr>
+
+        <!-- String length property -->
+        <h4>How many characters are in this quote?</h4>
+        <p id="quote">"Strawberry fields forever."</p>
+        <button onclick="getLength()">Answer</button>
+        <p id="length"></p>
+
+        <!-- FOR Loop -->
+        <button onclick="callLoop1()">Elongate the Quote</button>
+        <p id="spaced"></p>
+        <hr>
+
+        <!-- Arrays -->
+        <h4>Choose an album from the collection</h4>
+        <div style="display: block;">
+        <button onclick="getAlbum(0)">1</button>
+        <button onclick="getAlbum(1)">2</button>
+        <button onclick="getAlbum(2)">3</button>
+        </div>
+        <p id="album"></p>
+        <hr>
+
+        <!-- Constants -->
+        <button onclick="plane()">Airplane Info</button>
+        <p id="plane"></p>
+        <hr>
+
+        <!-- Let variables -->
+        <button onclick="showVariables()">Click for some numbers</button>
+        <p id="nums"></p>
+        <p id="nums1"></p>
+        <p id="nums2"></p>
+        <hr>
+        
+        <!-- Return -->
+        <button id="return" onclick="document.getElementById('return').innerHTML = random();">Click for a random number</button>
+        <hr>
+
+        <!-- Objects -->
+        <button id="guitar_object" onclick="document.getElementById('guitar_object').innerHTML = guitar.description();">Rock on</button>
+        <hr>
+
+        <!-- Break and Continue -->
+        <button onclick="myName()">Chop up my name</button>
+        <p id="name"></p>
+        <hr>
+
+    </body>
+</html>
