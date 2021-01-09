@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <title>Countdown</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+	</head>
+	<body>
+
+        <!-- COUNTDOWN TIMER -->
+        <div style="text-align:center;">
+            <h2>Countdown Timer</h2>
+            <p>Enter countdown time in seconds</p>
+            <input id="seconds" value="" size="5" />
+            <button onclick="countdown()">Start</button>
+            <p id="timer"></p>
+       </div> 
+       <hr>
+       <hr>
+       <br>
+
+        <!-- SLIDESHOW -->
+        <div class="container">
+            
+            <!-- Full-width images with caption and number -->
+            <div class="slides fade">
+                <div class="numbers">
+                    1 / 3
+                </div>
+                <img src="img1.jpg" style="width:100%">
+                <div class="text">
+                     Baton Rouge
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <div class="numbers">
+                    2 / 3
+                </div>
+                <img src="img2.jpg" style="width:100%">
+                <div class="text">
+                    Atlanta
+                </div>
+            </div>
+            
+            <div class="slides fade">
+                <div class="numbers">
+                    3 / 3
+                </div>
+                <img src="img3.jpg" style="width:100%">
+                <div class="text">
+                    Denver
+                </div>
+            </div>
+
+            <!-- CONTROLS -->
+            <a class="back" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="fwd" onclick="changeSlide(1)">&#10095;</a>
+            
+        </div>
+        <br>
+
+        <!-- DOTS/CIRCLES -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script src="JS/main.js"></script>
+	</body>
+</html>
