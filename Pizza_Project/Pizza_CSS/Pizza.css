@@ -1,0 +1,92 @@
+/* Dave Defourneaux */
+/* dave.defourneaux@gmail.com */
+/* github.com/dd4no */
+
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    background-image: linear-gradient(to right, green 15%, white 50%,red 85%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h3 {
+    color:darkslategray;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+}
+
+div {
+    background-color: rgb(161, 199, 191);
+}
+
+#placeOrder {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+}
+
+#menu {
+    padding: 10px;
+    border: 2px double black;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 680px;
+    height: 700px;
+}
+
+.left {
+    float: left;
+    margin-left: 5px;
+    width: 250px;       
+}
+
+.center {
+    float: left;
+    margin-left: 10px;
+    width: 160px;
+}
+
+.right {
+    float: right;
+    width: 200px;    
+}
+
+#order::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+#cart {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+}
+
+#showText {
+    float: left;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#totalPrice {
+    float: right;
+    margin: 0 auto;
+    width: 200px;
+    height: 190px;
+}
+
+
+
