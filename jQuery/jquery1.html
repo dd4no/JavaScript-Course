@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+                "<body>","<div id='container'>","<div id='inner'>","<h1>Basic jQuery</h1>","<p>para1</p>","<p>para2</p>","<p>para3</p>","</div>","</div>","</body>"
+            );
+        });
+        $("p").css({"color":"red"});
+    </script>
+
+</html>
