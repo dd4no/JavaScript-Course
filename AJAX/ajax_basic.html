@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+            </div>
+            <p id="mod" style="text-align: center;"></p>
+        </div>
+            
+		<script type="text/javascript">
+			
+            // Step 1 - Setup xml http request object
+            var ajax = new XMLHttpRequest();
+
+            // Step 2 - Prepare open AJAX request
+            ajax.open("GET", "content.html");
+
+            // Step 3 - Define AJAX response callback method
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState = 4) {
+                    document.getElementById("content").innerHTML = ajax.responseText;
+
+                    // Use ready state change to update document with modification time stamp
+                    document.getElementById("mod").innerHTML = ajax.getResponseHeader("Last-Modified");
+                }
+            }
+
+            // Step 4 - Send AJAX request for data
+            function getContent() {
+                ajax.send();
+                //document.getElementById("btn_content").style.display = "none";
+            }
+
+        </script>
+        
+    </body>
+</html>
