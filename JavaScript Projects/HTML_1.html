@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<!-- Dave Defourneaux           -->
+<!-- dave.defourneaux@gmail.com -->
+<!-- github.com/dd4no           -->
+
+	<head>
+		<meta charset= "utf-8">
+		<title>Switches and Canvas</title>		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="CSS/CSS_1.CSS">
+		<script src="JavaScript/JavaScript_1.js"></script>
+	</head>
+	
+	<body>
+
+		<!-- NAV BAR -->
+		<header id="nav">
+				
+		</header>
+		<!-- END NAV BAR -->
+		
+		<!-- CONTENT -->
+		<div id="container">
+
+			<!-- SIDE BAR -->
+			<div id="sidebar">
+
+				<!-- Color Choice -->
+				<p>Choose background color:</p>
+				<select id="colorChoice">
+					<option value="white">--</option>
+					<option value="purple">Purple</option>
+					<option value="blue">Blue</option>
+					<option value="green">Green</option>
+					<option value="yellow">Yellow</option>
+					<option value="orange">Orange</option>
+					<option value="red">Red</option>
+				</select>
+				<button onclick="changeBackground()">Change</button>
+				<hr>
+
+				<p>Choose boxes:</p>
+				<button onclick="boxChoice(0)">x</button>
+				<button onclick="boxChoice(1)">y</button>
+				<button onclick="boxChoice(2)">z</button>
+				<button onclick="clearBoxes()">Clear</button>
+				<hr>
+
+				<p>Draw on the Canvas</p>
+				<button onclick="gradient()">Gradiate</button><br>
+				<button onclick="slashCanvas()">Line</button>
+				<button onclick="drawCircle()">Circle</button><br>
+				<button onclick="addText()">Say Hi</button>
+				<button onclick="addText1()">Say Hey</button><br>
+				<hr>
+				
+				
+
+
+			</div>
+			<!-- END SIDE BAR -->
+			
+			<!-- MAIN AREA -->
+			<div id="content">
+
+				<table>
+					<tr>
+						<td>
+							<div class="box">x</div>
+							<div class="box">y</div>
+							<div class="box">z</div>
+						</td>
+						<td>
+							<canvas id="draw" width="200" height="200"></canvas>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+			<!-- END MAIN AREA -->
+
+		</div>
+		<!-- END CONTENT -->
+			
+		<!-- FOOTER -->
+		<footer>
+
+		</footer>
+		<!-- END FOOTER -->
+		
+	</body>
+
+</html>

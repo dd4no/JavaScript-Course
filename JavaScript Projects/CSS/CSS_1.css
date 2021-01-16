@@ -1,0 +1,134 @@
+/*  Dave Defourneaux	        */	    
+/*  dave.defourneaux@gmail.com	*/
+/*  github.com/dd4no		    */
+
+
+* {
+    box-sizing: border-box;
+}
+/*body {
+    margin: 0;
+}*/
+
+p {
+    font-weight: bold;
+}
+
+button {
+    padding: 3px;
+    margin: 3px;
+}
+
+ul {
+  list-style-type: none;  
+}
+
+li {
+    display: inline;
+}
+
+#nav {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 0px auto;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(50,50,50,1);
+    text-align: center;
+}
+
+#sidebar {
+    padding: 10px;
+    border: 2px solid black;
+    border-top: none;
+    width: 20%;
+    height: 700px;
+    float: left;
+    background-color: gray;
+}
+
+#content {
+    padding: 10px;
+    border: 2px solid black;
+    border-top: none;
+    width: 80%;
+    height: 700px;
+    float: left;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    padding: 20px;
+    border: 1px dotted black;
+    margin: 5px auto;
+    width: 100px;
+    text-align: center;
+}
+
+canvas {
+    border: 5px double black;
+    background-color: beige;
+}
+
+#container:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+footer {
+    padding: 10px;
+    border: 2px solid black;
+    border-top: none;
+    width: 100%;
+    height: 50px;
+    background-color:rgba(50,50,50,1);
+}
+
+#formBox {
+    padding:20px;
+    border: 1px solid blue;
+    border-radius: 30%;
+    margin: 5px auto;
+    margin-top: 20px;
+    width: 50%;
+    background-color: lightblue;
+}
+
+#contact {
+    padding: 10px;
+    border: 3px double black;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 75%;
+    background-color: royalblue;
+    text-align: center;
+}
+
+label {
+    font-weight:  bold;
+}
+
+input[type=text] {
+    padding: 10px;
+    
+    border-radius: 5px;
+    margin: 5px;
+    width: 75%;
+    /*display: inline-block;*/
+    
+}
+
+input[type=text]:hover, input[type=checkbox]:hover, input[type=submit]:hover {
+    border: 2px solid purple;
+    box-shadow: 0 0 10px purple;
+}
+
+input[type=submit]:hover {
+    background-color: darkgoldenrod;
+}

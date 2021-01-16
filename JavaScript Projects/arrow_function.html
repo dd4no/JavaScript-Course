@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrow Function</title>
+    </head>
+    <body>
+
+        <h2>Arrow Function</h2>
+
+        <p id="test"></p>
+
+        <!-- Regular Syntax 
+        <script>
+            var testFunction;
+            testFunction = function() {
+                return "Test, one, two three...";
+            }
+            document.getElementById("test").innerHTML = testFunction();
+        </script>
+        -->
+
+        <!-- Arrow Syntax -->
+        <script>
+            var testFunction;
+            testFunction = (check2) => "Test, one, two three...<br>" + check2;
+            document.getElementById("test").innerHTML = testFunction("Check one, check two");
+        </script>
+
+    </body>
+</html>

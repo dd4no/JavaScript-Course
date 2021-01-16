@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<!-- Dave Defourneaux             -->
+<!-- dave.defourneaux@gmail.com   -->
+<!-- github.com/dd4no             -->
+
+	<head>
+		<meta charset= "utf-8">
+		<title>Title</title>		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+        <script src="JavaScript/JavaScript_3.js"></script>
+	</head>
+	
+	<body>
+
+        <!--  Data Attributes -->
+        <h3>See how each chess piece moves</h3>
+        <ul>
+            <li><button onclick="showMove(this)" id="pawn" data-movement="one or two squares forward on the first move, and one square only forward on subsequent moves">Pawn</button></li>
+            <li><button onclick="showMove(this)" id="knight" data-movement="two squares forward and one sideways, or two squares sidesways and one forward">Knight</button></li>
+            <li><button onclick="showMove(this)" id="bishop" data-movement="diagonally as many squares as possible or as needed">Bishop</button></li>
+            <li><button onclick="showMove(this)" id="rook" data-movement="forward or sideways as many squares as possible or as needed">Rook</button></li>
+            <li><button onclick="showMove(this)" id="queen" data-movement="forward, sideways, or diagonally as many squares as possible or as needed">Queen</button></li>
+            <li><button onclick="showMove(this)" id="king" data-movement="one square in any direction">King</button></li>
+        </ul>
+		
+	</body>
+
+</html>
