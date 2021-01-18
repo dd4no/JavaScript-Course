@@ -9,17 +9,131 @@
 		<meta charset= "utf-8">
 		<title>Switches and Canvas</title>		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<link rel="stylesheet" href="CSS/CSS_1.CSS">
-		<script src="JavaScript/JavaScript_1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="JS/JavaScript_1.js"></script>
+
+		<!-- Open and close Pop Up -->
+		<script>
+			function loginBox() {
+				document.getElementById("login").style.display="block";
+			}
+			function closeBox() {
+				document.getElementById("login").style.display="none";
+			}
+
+		</script>
+
+		<style>
+			/* Style for Fade in */
+			body {
+				/* One second transition to full visability */
+				opacity: 1;
+				transition: 1s opacity;
+			}
+			.hidden {
+				/* Hides element */
+				opacity: 0;
+				transition: none;
+			}
+
+			/* Style for Pop Up */
+			#login {
+				display: none;
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				padding: 5px;
+				border: 5px solid black;
+				border-radius: 3%;
+				
+				width: 20%;
+				background-color: rgba(0,0,0,.9);
+				color: gold;
+				z-index: 1;		
+			}
+			.form {
+				padding: 10px;
+				border: 1px solid black;
+				background-color;
+			}
+			#user:focus, #pw:focus {
+				background-color: rgb(241, 232, 144);
+				outline: none;
+			}
+			#user:hover, #pw:hover {
+				border: 2px solid black;
+				box-shadow: 0 0 10px gold;
+			}
+			.btn {
+				padding: 5px;
+				border: 1px solid black;
+				border-radius: 5px;
+				font-weight: bold;
+				cursor: pointer;	
+			}
+			.open:hover {
+				box-shadow: 0 0 10px gold;
+			}
+			.go:hover {
+				box-shadow: 0 0 10px green;
+			}
+			.cxl:hover {
+				box-shadow: 0 0 10px red;
+			}
+
+			/* Animation */
+			@keyframes moveBox {
+				0%, 100% {
+					transform: translateX(0px);
+				}
+				50% {
+					transform: translateX(100px);
+				}
+			}
+			.box:hover {
+				animation-name: moveBox;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+			}
+
+		</style>
+
 	</head>
 	
 	<body>
 
+		<!-- Fade in body on page load -->
+		<script>
+			// Apply hidden class to hide
+			document.body.className += " hidden";
+			// If document ready, remove hidden class to transition
+			$(document).ready(function() {
+				$("body").removeClass('hidden');
+			});
+		</script>
+
+
+
 		<!-- NAV BAR -->
 		<header id="nav">
-				
+			<button class="btn open" onclick="loginBox()">LOGIN</button>
 		</header>
 		<!-- END NAV BAR -->
+
+		<!-- POP UP -->
+		<div class="popup" id="login">
+			<form action="" class="form">
+				<h1>LOGIN</h1>
+				<input type="text" id="user"name="UserID" placeholder="USER ID" required>
+				<input type="text" id="pw"name="Password" placeholder="PASSWORD" required>
+				<hr>
+				<button type="submit" class="btn go">LOGIN</button>
+				<button type="button" class="btn cxl" onclick="closeBox()">cancel</button>
+			</form>
+		</div>
+		<!-- END POP UP -->
 		
 		<!-- CONTENT -->
 		<div id="container">

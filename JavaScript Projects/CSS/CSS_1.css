@@ -32,9 +32,9 @@ li {
     border: 2px solid black;
     margin: 0px auto;
     width: 100%;
-    height: 30px;
+    height: auto;
     background-color: rgba(50,50,50,1);
-    text-align: center;
+    text-align: right;
 }
 
 #sidebar {
@@ -90,6 +90,9 @@ footer {
     background-color:rgba(50,50,50,1);
 }
 
+
+/* CONTACT FORM */
+
 #formBox {
     padding:20px;
     border: 1px solid blue;
@@ -114,9 +117,8 @@ label {
     font-weight:  bold;
 }
 
-input[type=text] {
-    padding: 10px;
-    
+input[type=text], input[type=tel] {
+    padding: 10px;    
     border-radius: 5px;
     margin: 5px;
     width: 75%;

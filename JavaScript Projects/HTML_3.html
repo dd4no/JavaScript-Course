@@ -7,24 +7,66 @@
 
 	<head>
 		<meta charset= "utf-8">
-		<title>Title</title>		
+		<title>Chess board</title>		
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
-        <script src="JavaScript/JavaScript_3.js"></script>
+        <script src="JS/JavaScript_3.js"></script>
+
+        <style>
+            body { 
+                margin: 0 auto;
+            }
+
+            div {
+                margin: 0 auto;
+            }
+
+            @keyframes zoom {
+                0% { transform: scale(1,1); }
+                50% { transform: scale(1.1,1.1); }
+                100% { transform: scale(1,1); }
+            }
+
+            img {
+                width: 100%;
+                animation: zoom 25s forwards;
+                animation-iteration-count: infinite;
+            }
+
+            #bar {
+                
+                border: 2px double orange;
+                margin: 10px auto;
+                width: 50%;
+                text-align: center;
+                position: fixed;
+                top: 40%;
+                left:25%;
+                z-index:1;
+                background-color: rgba(0,0,0,.5);
+                color: orange;
+            }
+        </style>
 	</head>
 	
 	<body>
 
         <!--  Data Attributes -->
-        <h3>See how each chess piece moves</h3>
-        <ul>
-            <li><button onclick="showMove(this)" id="pawn" data-movement="one or two squares forward on the first move, and one square only forward on subsequent moves">Pawn</button></li>
-            <li><button onclick="showMove(this)" id="knight" data-movement="two squares forward and one sideways, or two squares sidesways and one forward">Knight</button></li>
-            <li><button onclick="showMove(this)" id="bishop" data-movement="diagonally as many squares as possible or as needed">Bishop</button></li>
-            <li><button onclick="showMove(this)" id="rook" data-movement="forward or sideways as many squares as possible or as needed">Rook</button></li>
-            <li><button onclick="showMove(this)" id="queen" data-movement="forward, sideways, or diagonally as many squares as possible or as needed">Queen</button></li>
-            <li><button onclick="showMove(this)" id="king" data-movement="one square in any direction">King</button></li>
-        </ul>
+        <div id="bar">
+            <h3>See how each chess piece moves</h3>
+            <ul>
+                <li><button onclick="showMove(this)" id="pawn" data-movement="one or two squares forward on the first move, and one square only forward on subsequent moves">Pawn</button></li>
+                <li><button onclick="showMove(this)" id="knight" data-movement="two squares forward and one sideways, or two squares sidesways and one forward">Knight</button></li>
+                <li><button onclick="showMove(this)" id="bishop" data-movement="diagonally as many squares as possible or as needed">Bishop</button></li>
+                <li><button onclick="showMove(this)" id="rook" data-movement="forward or sideways as many squares as possible or as needed">Rook</button></li>
+                <li><button onclick="showMove(this)" id="queen" data-movement="forward, sideways, or diagonally as many squares as possible or as needed">Queen</button></li>
+                <li><button onclick="showMove(this)" id="king" data-movement="one square in any direction">King</button></li>
+            </ul>
+        </div>
+
+        <div>
+            <img src="chess.jpg" alt="chess pieces">
+        </div>
 		
 	</body>
 

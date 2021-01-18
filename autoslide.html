@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Autoslide</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style>
+            #slideshow {
+                padding: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.4);
+                margin: 50px auto;
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+
+            #slideshow  div {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
+            
+            .fade {
+                position: relative;
+                width: 300px;
+                height: 300px;
+            }
+            
+            .fade img {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        
+        
+        <div id="slideshow">
+            <div>
+                <img src="1.jpg" alt="">
+            </div>
+            <div>
+                <img src="2.jpg" alt="">
+            </div>
+            <div>
+                <img src="3.jpg" alt="">
+            </div>
+            <div>
+                <img src="4.jpg" alt="">
+            </div>
+        </div>
+        
+        <!--
+        <div class="fade">
+            <img src="1.jpg" alt="">
+            <img src="2.jpg" alt="">
+            <img src="3.jpg" alt="">
+            <img src="4.jpg" alt="">
+        </div>
+    -->
+
+        <script>
+            
+            $("#slideshow div:gt(0)").hide();
+            setInterval(function() {
+                $('slideshow :first-child')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+            
+            /*
+            $(function() {
+                $('.fade img:gt(0)').hide();
+                setInterval(function() {
+                    $('fade :first-child').fadeOut()
+                    .next('img').fadeIn()
+                    .end().appendTo('.fade');},3000);
+            });
+            */
+            
+        </script>
+
+    </body>
+</html>
