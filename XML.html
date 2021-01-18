@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html language="en">
+    <head>
+        <meta charset="utf-8">
+        <title>XML</title>
+    </head>
+    <body>
+        <p id="xml"></p>
+        <p id="xml1"></p>
+        
+        
+        <script>
+            //var i;
+            var Album = "<album>" + "<title>Bridge Over Troubled Water</title>" + "<artist>Simon and Garfunkel</artist>" + "<year>1970</year>" + "</album>" +
+                "<album>" + "<title>The Low Spark of High Heeled Boys</title>" + "<artist>Traffic</artist>" + "<year>1971</year>" + "</album>";
+            xmlParser = new DOMParser();
+            xmlDoc = xmlParser.parseFromString(Album,"text/xml");
+           // while ( i=0, i<2, i++ ) {
+               // console.log(i);
+                var title = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                var artist = xmlDoc.getElementsByTagName("artist")[0].childNodes[0].nodeValue;
+                var year = xmlDoc.getElementsByTagName("year")[0].childNodes[0].nodeValue;
+                document.getElementById("xml").innerHTML = title + "<br>" + artist + "<br>" + year;
+
+               // var title = xmlDoc.getElementsByTagName("title")[1].childNodes[1].nodeValue;
+                //var artist = xmlDoc.getElementsByTagName("artist")[1].childNodes[1].nodeValue;
+                //var year = xmlDoc.getElementsByTagName("year")[1].childNodes[1].nodeValue;
+               // document.getElementById("xml").innerHTML = title + "<br>" + artist + "<br>" + year;
+
+                // }
+        </script>
+
+    </body>
+</html>
