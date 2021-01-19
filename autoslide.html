@@ -16,14 +16,14 @@
                 height: 300px;
             }
 
-            #slideshow  div {
+            #slideshow > div {
                 position: absolute;
                 top: 10px;
                 left: 10px;
                 right: 10px;
                 bottom: 10px;
             }
-            
+            /*
             .fade {
                 position: relative;
                 width: 300px;
@@ -35,7 +35,7 @@
                 left: 0;
                 top: 0;
             }
-            
+            */
         </style>
 
     </head>
@@ -68,9 +68,9 @@
 
         <script>
             
-            $("#slideshow div:gt(0)").hide();
+            $("#slideshow > div:gt(0)").hide();
             setInterval(function() {
-                $('slideshow :first-child')
+                $('#slideshow >div:first')
                 .fadeOut(1000)
                 .next()
                 .fadeIn(1000)
