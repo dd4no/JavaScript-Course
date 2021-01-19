@@ -93,3 +93,7 @@ function formValidate() {
         return false;
     }
 }
+
+function changeMe() {
+    document.getElementById("clickme").style.color = "red";
+}
