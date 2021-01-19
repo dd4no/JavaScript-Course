@@ -1,0 +1,54 @@
+/* Dave Defourneaux */
+/* dave.defourneaux@gmail.com */
+/* github.com/dd4no */
+
+html {
+    text-align: center;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+input {
+    padding-top: 30px;
+    border: 1px dotted black;
+    width: 500px;
+    height: 60px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    margin-top: 5px;
+}
+
+#todo {
+    position: relative;
+    padding: 5px;
+    border: 1px dashed black;
+    margin-top: 5px;
+}
+
+li {
+    margin: 0;
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 500px;
+}
+
+.remove {
+    padding-bottom: 5px;
+}
